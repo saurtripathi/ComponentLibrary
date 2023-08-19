@@ -88,8 +88,8 @@ export default function App() {
           </Card> */}
 
 
-        {/* <Testimonial imageSource="/MyImage.png" />  */}
-          <Testimonial />
+        <Testimonial imageSource="/MyImage.png" /> 
+          {/* <Testimonial /> */}
 
           
         

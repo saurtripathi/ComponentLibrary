@@ -6,7 +6,7 @@ export default function TestimonialWithoutPic({ imageSource, children }) {
     const { description, name, designation } = React.useContext(TestimonialsContext)
     console.log(imageSource,description, name, designation)
     return (
-        <div className='testimonials--card testimonials--card--minHeight--nopic' style={{ padding: 0 }}>
+        <div className='testimonials--card' style={{ padding: 0 }}>
             <div className='testimonials--container' style={{ backgroundColor: '#F9FAFB' }}>
                 <div className='testimonials--wrapper'>
 
