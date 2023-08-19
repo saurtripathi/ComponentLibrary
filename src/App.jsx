@@ -15,6 +15,7 @@ import Testimonial from './Testimonials/Testimonial';
 const TestimonialsContext = React.createContext()
 export default function App() {
 
+  const imagePath = React.useRef('/MyImage.png')
 
   const banners = [
     {
@@ -87,8 +88,12 @@ export default function App() {
           </Card> */}
 
 
-        {/* <Testimonial imageSource="/MyImage.png" /> */}
-        <Testimonial />
+        {/* <Testimonial imageSource="/MyImage.png" />  */}
+          <Testimonial />
+
+          
+        
+        
 
 
 
