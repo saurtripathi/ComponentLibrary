@@ -379,6 +379,10 @@ svg {
 
     }
 
+    .testimonials--card--minHeight--nopic {
+        min-height: 100vh;
+    }
+
     /* 
     .testimonials--container {
         border: 2px solid red;
