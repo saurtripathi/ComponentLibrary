@@ -6,7 +6,7 @@ export default function TestimonialWithPic({ imageSource, children }) {
     const { description, name, designation } = React.useContext(TestimonialsContext)
     console.log(children,description, name, designation)
     return (
-        <div className='testimonials--card' style={{ backgroundColor: '#F9FAFB' }}>
+        <div className='testimonials--card' style={{ backgroundColor: '#F9FAFB',minHeight:'80vh' }}>
             <div className='testimonials--container'>
                 <div className='testimonials--wrapper'>
                     <div className='testimonials--wrapper--container'>
@@ -27,7 +27,7 @@ export default function TestimonialWithPic({ imageSource, children }) {
                 </div>
             </div>
             <div >
-                <img className='testimonials--pic' src={imageSource} alt='Candidate Picture' />
+                <img className='testimonials--pic' style={{width:'90%'}} src={imageSource} alt='Candidate Picture' />
             </div>
         </div>
     )
