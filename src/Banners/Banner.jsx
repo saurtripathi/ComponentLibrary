@@ -8,13 +8,13 @@ import { HiInformationCircle } from "react-icons/hi";
  * status : success | error | warning | neutral
  */
 
-export default function Banner({children,status,banners,...rest }) {
+export default function Banner({ children, status, banners, ...rest }) {
 
     const backgroundColorClass = status ? status : ''
     const bannerClasses = classnames(backgroundColorClass, 'container', 'banner')
 
     console.log(status)
-    const elment = children.filter(child => child.props.id===status)
+    const elment = children.filter(child => child.props.id === status)
 
     return (
 

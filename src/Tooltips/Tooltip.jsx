@@ -21,7 +21,7 @@ export default function Tooltip({ theme, colorVariant, closeIcon, picIcon, toolt
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" className={`tooltip--polygon tooltip--polygon-fill-${theme}-${colorVariant}`} viewBox="0 0 30 15" >
-                    <path d="M15 15 L0.27757 0.75L29.7224 0.750003L15 15Z" />                    
+                    <path d="M15 15 L0.27757 0.75L29.7224 0.750003L15 15Z" />
                 </svg>
             </div>
         </>

@@ -1,4 +1,4 @@
-import React from  'react'
+import React from 'react'
 import classnames from "classnames"
 
 /**
@@ -7,14 +7,14 @@ import classnames from "classnames"
  * color : grey | red | green | yellow | pink | blue | indigo | purple
  */
 
-export default function Badge({children,...rest}){
+export default function Badge({ children, ...rest }) {
 
-    const {color,shape,classNames} = rest
+    const { color, shape, classNames } = rest
     const colorClasses = color ? color : ''
     const badgeShapeClass = shape ? shape : ''
-    const badgeClasses = classnames(badgeShapeClass,classNames,colorClasses)
+    const badgeClasses = classnames(badgeShapeClass, classNames, colorClasses)
 
-    return(
+    return (
 
         <div className={badgeClasses} >
             {children}

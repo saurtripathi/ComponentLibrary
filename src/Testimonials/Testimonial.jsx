@@ -8,8 +8,8 @@ export default function Testimonial({ imageSource, children }) {
     // console.log(imageSource ? 'hi' : 'bye')
 
     const { description, name, designation } = React.useContext(TestimonialsContext)
-    console.log(description, name, designation,imageSource)
+    console.log(description, name, designation, imageSource)
 
-    return imageSource ? <TestimonialWithPic imageSource={imageSource} /> :  <TestimonialWithoutPic />
+    return imageSource ? <TestimonialWithPic imageSource={imageSource} /> : <TestimonialWithoutPic />
 
 }
