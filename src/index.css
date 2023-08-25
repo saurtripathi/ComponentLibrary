@@ -240,6 +240,7 @@ p:nth-child(odd) {
     margin-top: 0;
 }
 
+/** -------------------------------- Testimonials component ------------------------*/
 .testimonials--card {
     display: flex;
     max-width: 1358px;
@@ -379,9 +380,7 @@ svg {
 
     }
 
-    .testimonials--card--minHeight--nopic {
-       
-    }
+
 
     /* 
     .testimonials--container {
@@ -453,4 +452,429 @@ svg {
         margin-top: 0;
     }
 
+}
+
+/** --------------------------------------- Toast component ------------------------*/
+:root {
+    --toastify-color-light: #fff;
+    --toastify-color-dark: #121212;
+    --toastify-color-info: #3498db;
+    --toastify-color-success: #07bc0c;
+    --toastify-color-warning: #f1c40f;
+    --toastify-color-error: #e74c3c;
+    --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+    --toastify-icon-color-info: var(--toastify-color-info);
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-icon-color-warning: var(--toastify-color-warning);
+    --toastify-icon-color-error: var(--toastify-color-error);
+    --toastify-toast-background: red;
+}
+
+.Toastify__toast-container {
+    --toastify-toast-width: 384px;
+    --toastify-toast-min-height: 78px;
+
+}
+
+.Toast--warning {
+    background-color: #FFFBEB;
+}
+
+.Toast--error {
+    background-color: #FEF2F2;
+}
+
+.Toast--success {
+    background-color: #ECFDF5
+}
+
+.Toast--information {
+    background-color: #EFF6FF;
+}
+
+.Toastify__toast--msg-child-even {
+    margin-top: 0;
+}
+
+.Toastify__toast--warning {
+    background-color: #FFFBEB
+}
+
+.Toastify__toast--error {
+    background-color: #FEF2F2
+}
+
+.Toastify__toast--success {
+    background-color: #ECFDF5;
+}
+
+.Toastify__toast--info {
+    background-color: #EFF6FF;
+}
+
+.error-div p:nth-child(1) {
+    color: #92400E;
+    margin-bottom: 0;
+}
+
+.error-div p:nth-child(2) {
+    color: #B45309;
+}
+
+.Toastify__toast-icon {
+    align-self: flex-start;
+
+}
+
+.success-div p:nth-child(1) {
+    color: #065F46;
+    margin-bottom: 0;
+}
+
+.success-div p:nth-child(2) {
+    color: #065F46;
+}
+
+.warning-div p:nth-child(1) {
+    color: #92400E;
+    margin-bottom: 0;
+}
+
+.warning-div p:nth-child(2) {
+    color: #B45309;
+}
+
+.information-div p:nth-child(1) {
+    color: #1E40AF;
+    margin-bottom: 0;
+}
+
+.information-div p:nth-child(2) {
+    color: #1C51B9;
+}
+
+.warning-div,
+.success-div,
+.error-div,
+.information-div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.75rem
+}
+
+.Toastify__toast--msg-child-odd {
+    margin-top: 0;
+}
+
+.Toastify__progress-bar--error {
+    display: none;
+}
+
+.Toastify__progress-bar--success {
+    display: none;
+}
+
+.Toastify__progress-bar--info {
+    display: none;
+}
+
+.Toastify__progress-bar--warning {
+    display: none;
+}
+
+.btn--notify {
+    border: none;
+    padding: 1em 2em;
+    background-color: rgb(234, 217, 217);
+    border: 1px solid rgb(237, 176, 176);
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 400px) {
+
+    main {
+        gap: 0;
+        /* max-height: 600px; */
+    }
+
+    .Toastify__toast-container {
+        padding: 1em;
+        font-size: 1.25em;
+    }
+
+}
+
+/** -------------------------------Tooltip ---------------------------------------*/
+
+.tooltip--container {
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+    padding: 0.75rem;
+}
+
+.tooltip--container div:nth-child(1) svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.tooltip--box {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    gap: 0;
+    margin: 0;
+
+    /* height: 115px; */
+}
+
+.tooltip--p {
+    display: flex;
+    flex-direction: column;
+}
+
+.tooltip--polygon {
+    margin-left: 46px;
+    width: 30px;
+    height: 15px;
+}
+
+.tooltip--polygon-fill-bold-black {
+    fill: #262626;
+}
+
+.tooltip--polygon-fill-bold-blue {
+    fill: #1E40AF;
+}
+
+.tooltip--polygon-fill-bold-green {
+    fill: #47AA5D;
+}
+
+.tooltip--polygon-fill-bold-pink {
+    fill: #A9229B;
+}
+
+.tooltip--close-btn {
+    cursor: pointer;
+}
+
+.tooltip--close-btn:active {
+    /* box-shadow: 0 5px #666; */
+    transform: translateX(2px);
+}
+
+
+.tooltip--p p:nth-child(1) {
+    margin: 0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tooltip--p p:nth-child(2) {
+
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.tooltip--bold-black p:nth-child(1) {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.tooltip--bold-black p:nth-child(2) {
+    color: #C7C7C7;
+    font-weight: 300;
+}
+
+.tooltip--bold-blue p:nth-child(1) {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.tooltip--bold-blue p:nth-child(2) {
+    color: #E8EDFF;
+    font-weight: 300;
+}
+
+.tooltip--bold-pink p:nth-child(1) {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.tooltip--bold-pink p:nth-child(2) {
+    color: #FFE9FD;
+    font-weight: 300;
+}
+
+.tooltip--bold-green p:nth-child(1) {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.tooltip--bold-green p:nth-child(2) {
+    color: #E3FFE9;
+    font-weight: 300;
+}
+
+.bg--bold-black {
+    background-color: #262626;
+}
+
+.bg--bold-blue {
+    background-color: #1E40AF;
+}
+
+.bg--bold-pink {
+    background-color: #A9229B;
+}
+
+.bg--bold-green {
+    background-color: #47AA5D;
+}
+
+.stroke-color-bold-green {
+    stroke: #C1FFCF;
+}
+
+.stroke-color-bold-blue {
+    stroke: #7EA6F2;
+}
+
+.stroke-color-bold-black {
+    stroke: #C7C7C7;
+}
+
+.stroke-color-bold-pink {
+    stroke: #F462E6;
+}
+
+/** --------------------------------- Tooltip light theme --------------------------------------------*/
+
+.tooltip--light-black p:nth-child(1) {
+    color: #111827;
+    font-weight: 400;
+}
+
+.tooltip--light-black p:nth-child(2) {
+    color: #6B7280;
+    font-weight: 300;
+}
+
+.tooltip--light-blue p:nth-child(1) {
+    color: #1E40AF;
+    font-weight: 400;
+}
+
+.tooltip--light-blue p:nth-child(2) {
+    color: #1C51B9;
+    font-weight: 300;
+}
+
+.tooltip--light-pink p:nth-child(1) {
+    color: #A9229B;
+    font-weight: 400;
+}
+
+.tooltip--light-pink p:nth-child(2) {
+    color: #C7369E;
+    font-weight: 300;
+}
+
+.tooltip--light-green p:nth-child(1) {
+    color: #137A2A;
+    font-weight: 400;
+}
+
+.tooltip--light-green p:nth-child(2) {
+    color: #3C8C4E;
+    font-weight: 300;
+}
+
+.bg--light-black {
+    background-color: #FFF;
+}
+
+.bg--light-blue {
+    background-color: #E0E7FF;
+}
+
+.bg--light-pink {
+    background-color: #FFF3FC;
+}
+
+.bg--light-green {
+    background-color: #E7FFF3;
+}
+
+.stroke-color-light-green {
+    stroke: #41A557;
+}
+
+.stroke-color-light-blue {
+    stroke: #1C51B9;
+}
+
+.stroke-color-light-black {
+    stroke: #6B7280;
+}
+
+.stroke-color-light-pink {
+    stroke: #C7369E;
+}
+
+.tooltip--polygon-fill-light-black {
+    fill: #FFF;
+}
+
+.tooltip--polygon-fill-light-blue {
+    fill: #E0E7FF;
+}
+
+.tooltip--polygon-fill-light-green {
+    fill: #E7FFF3;
+}
+
+.tooltip--polygon-fill-light-pink {
+    fill: #FFF3FC;
+}
+
+.tooltip--container>div:nth-child(3) {
+
+    /* fill: red; */
+}
+
+.tooltip--close-btn--light-pink svg path {
+    fill: #C7369E;
+}
+
+.tooltip--close-btn--light-green svg path {
+    fill: #3C8C4E;
+}
+
+.tooltip--close-btn--light-black svg path {
+    fill: #6B7280;
+}
+
+.tooltip--close-btn--light-blue svg path {
+    fill: #1C51B9;
+}
+
+.div--toggleSlider{
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    /* border: 1px solid red;; */
+    align-items: center;
+    gap: 1rem;
+}
+
+.div--toggleSlider span{
+    color: black;
+    /* border: 1px solid red;; */
 }
